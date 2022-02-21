@@ -1,20 +1,20 @@
 # node-auth
 
 # Features
-/register
--email, name, password and passwordConfirmation
--validation with joi
--pw hashed with bcryptjs
--stored in mongodb collection
+/register  
+-email, name, password and passwordConfirmation  
+-validation with joi  
+-pw hashed with bcryptjs  
+-stored in mongodb collection  
 
-/login (middleware: guest)
--email and password
--validation with joi
+/login (middleware: guest)  
+-email and password  
+-validation with joi  
 
-/logout (middleware: guest)
--destroys session and cookies
+/logout (middleware: guest)  
+-destroys session and cookies  
 
-+ session expiry
+session expiry  
 
 # Packages
 1. "bcryptjs": "^2.4.3",
