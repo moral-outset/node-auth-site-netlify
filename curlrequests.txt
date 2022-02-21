@@ -1,0 +1,1 @@
+curl -v POST localhost:3000/login -H "Content-Type:application/json" -d "{'email':'email@gmail.com','password':'Secret14'}"
