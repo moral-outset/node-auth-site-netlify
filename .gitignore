@@ -1,5 +1,5 @@
 #ignore dbinfo with db password and username
-/api/src/config/dbInfo.ts
+**/dbInfo.ts
 
 #ignore nodemodules
 /api/node_modules
