@@ -1,5 +1,5 @@
-# ignore dbInfo.ts
-**/dbInfo.ts
+#ignore dbinfo with db password and username
+/api/src/config/dbInfo.ts
 
-# ignore ALL files in ANY directory named node_modules
-**/node_modules/
+#ignore nodemodules
+/api/node_modules
