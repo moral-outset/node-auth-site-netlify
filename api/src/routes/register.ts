@@ -8,6 +8,7 @@ import { BadRequest } from '../errors';
 const router = Router()
 
 router.post('/register', guest, catchAsync(async(req, res) => {
+    const bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     const { email, name, password, passwordConfirmation } = req.body
 
     await validate(registerSchema,req.body)
@@ -19,7 +20,7 @@ router.post('/register', guest, catchAsync(async(req, res) => {
     }
 
     const user = await User.create({
-        email, name, password
+        email, name, password, bio
     })
 
     //then login

@@ -13,7 +13,7 @@ export const catchAsync = (handler: RequestHandler) =>
         console.log(err.stack)
     }
     
-    res.status(err.status || 500).json({ message: err.message || "Internal Server Error"})
+    res.status(err.status || 500).json({ message: err.message || "Internal Server Error!"})
 }
 
 export const notFound = (req: Request, res: Response, next: NextFunction) => res.status(404).json({message:"Not Found"})

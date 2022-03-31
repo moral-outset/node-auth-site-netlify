@@ -22,7 +22,8 @@ export const SESSION_OPTIONS: SessionOptions = {
     cookie: {
         maxAge: +SESSION_IDLE_TIMEOUT,
         secure: false, //boolean value, depends on whether in production mode //TAKE A LOOK AT THISSSSSSSSSSSSSSSS!!
-        sameSite: false, //change to true in prod
+        sameSite: 'lax', //change to true in prod
+        httpOnly: false, //allows you to access cookies with JS!
 
     },
     rolling: true, //cookie timeout is rolled if user is still active

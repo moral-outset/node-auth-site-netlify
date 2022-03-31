@@ -12,6 +12,8 @@ const password = Joi.string().min(8).max(BCRYPT_MAX_BYTES,'utf8')
 
 const passwordConfirmation = Joi.valid(Joi.ref('password')).required()
 
+const bio = Joi.string().min(0).max(280)
+
 export const registerSchema = Joi.object({
     email,
     name,
@@ -21,4 +23,7 @@ export const registerSchema = Joi.object({
 export const loginSchema = Joi.object({
     email,
     password
+})
+export const bioSchema = Joi.object({
+    bio
 })
