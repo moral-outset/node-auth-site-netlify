@@ -9,7 +9,7 @@ router.get('/profile', auth, catchAsync(async(req,res) => {
     //exclude/include certain values using .select()
     // const user = await User.findById(req.session!.userId).select('-password -__v')
     const user = await User.findById(req.session!.userId).select('-password -__v -createdAt -updatedAt')
-
+    
     res.json(user)
 }))
 
