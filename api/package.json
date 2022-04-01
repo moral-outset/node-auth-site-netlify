@@ -6,7 +6,8 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --transpile-only --no-notify src"
+    "dev": "ts-node-dev --transpile-only --no-notify src",
+    "prod": "--transpile-only --no-notify src"
   },
   "keywords": [],
   "author": "",
