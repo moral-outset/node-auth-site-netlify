@@ -19,6 +19,6 @@ import { createApp } from './app';
     //abstract out the app creation into another module in app.js
     const app = createApp(store)
 
-    app.listen(APP_PORT, () => console.log(`http://localhost:${APP_PORT}`))
+    app.listen(process.env.PORT || APP_PORT, () => console.log(`http://localhost:${APP_PORT}`))
 })()
 
